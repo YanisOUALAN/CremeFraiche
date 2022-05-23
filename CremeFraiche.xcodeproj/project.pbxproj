@@ -14,6 +14,8 @@
 		0975F057278B63BE00B5ED77 /* CremeFraicheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0975F056278B63BE00B5ED77 /* CremeFraicheTests.swift */; };
 		0975F061278B63BE00B5ED77 /* CremeFraicheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0975F060278B63BE00B5ED77 /* CremeFraicheUITests.swift */; };
 		0975F063278B63BE00B5ED77 /* CremeFraicheUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0975F062278B63BE00B5ED77 /* CremeFraicheUITestsLaunchTests.swift */; };
+		0975F070278B68D600B5ED77 /* PresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0975F06F278B68D600B5ED77 /* PresentationView.swift */; };
+		09CBA785278C48C9000D3E87 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CBA784278C48C9000D3E87 /* NotificationHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,10 @@
 		0975F05C278B63BE00B5ED77 /* CremeFraicheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CremeFraicheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0975F060278B63BE00B5ED77 /* CremeFraicheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CremeFraicheUITests.swift; sourceTree = "<group>"; };
 		0975F062278B63BE00B5ED77 /* CremeFraicheUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CremeFraicheUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0975F06F278B68D600B5ED77 /* PresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationView.swift; sourceTree = "<group>"; };
+		09CBA782278C35CD000D3E87 /* CremeFraiche.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CremeFraiche.entitlements; sourceTree = "<group>"; };
+		09CBA783278C40AA000D3E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		09CBA784278C48C9000D3E87 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,12 @@
 		0975F044278B63BC00B5ED77 /* CremeFraiche */ = {
 			isa = PBXGroup;
 			children = (
+				09CBA783278C40AA000D3E87 /* Info.plist */,
+				09CBA782278C35CD000D3E87 /* CremeFraiche.entitlements */,
 				0975F045278B63BC00B5ED77 /* CremeFraicheApp.swift */,
 				0975F047278B63BC00B5ED77 /* ContentView.swift */,
+				0975F06F278B68D600B5ED77 /* PresentationView.swift */,
+				09CBA784278C48C9000D3E87 /* NotificationHandler.swift */,
 				0975F049278B63BE00B5ED77 /* Assets.xcassets */,
 				0975F04B278B63BE00B5ED77 /* Preview Content */,
 			);
@@ -258,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0975F048278B63BC00B5ED77 /* ContentView.swift in Sources */,
+				09CBA785278C48C9000D3E87 /* NotificationHandler.swift in Sources */,
 				0975F046278B63BC00B5ED77 /* CremeFraicheApp.swift in Sources */,
+				0975F070278B68D600B5ED77 /* PresentationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,12 +428,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CremeFraiche/CremeFraiche.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CremeFraiche/Preview Content\"";
 				DEVELOPMENT_TEAM = 2P767C22JM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CremeFraiche/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,12 +459,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CremeFraiche/CremeFraiche.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CremeFraiche/Preview Content\"";
 				DEVELOPMENT_TEAM = 2P767C22JM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CremeFraiche/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
